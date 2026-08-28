@@ -45,3 +45,9 @@ To publish the website:
 
 Workflow file:
 `.github/workflows/deploy.yml`
+
+
+## Recent updates
+- Added a premium animated loading screen with ZX mark, progress animation and loading metadata.
+- Added a dedicated `terms.html` Terms & Conditions page.
+- Updated the footer Terms & Conditions link to open the new page.
