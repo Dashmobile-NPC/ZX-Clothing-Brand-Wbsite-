@@ -19,3 +19,140 @@
 .legal-section ul{padding-left:20px}
 .legal-back{display:inline-flex;margin-top:45px}
 @media(max-width:700px){.loader-wordmark{font-size:10px;letter-spacing:.25em}.legal-page{padding-top:125px}.legal-page h1{font-size:58px}}
+
+
+/* =========================================================
+   Responsive polish — phones, tablets & laptops
+   ========================================================= */
+
+/* Prevent horizontal overflow from large display elements */
+html, body { width:100%; max-width:100%; overflow-x:hidden; }
+img, video, iframe { max-width:100%; }
+
+/* Make interactive controls comfortable on touch screens */
+a, button, input, select, textarea { -webkit-tap-highlight-color:transparent; }
+button, .btn, .bag-btn, nav a { touch-action:manipulation; }
+
+/* Laptop/tablet */
+@media (max-width: 1100px) {
+  .site-header { padding-left:24px; padding-right:24px; }
+  .desktop-nav { gap:18px; }
+}
+
+/* Tablet */
+@media (max-width: 900px) {
+  .site-header { min-height:64px; }
+  .desktop-nav { display:none; }
+
+  .nav-actions { margin-left:auto; }
+  .bag-btn { white-space:nowrap; }
+
+  /* Prevent oversized hero typography from causing overflow */
+  .hero h1, .hero-title, .display-title {
+    max-width:100%;
+    overflow-wrap:anywhere;
+  }
+
+  section { scroll-margin-top:80px; }
+}
+
+/* Phones */
+@media (max-width: 640px) {
+  body { font-size:14px; }
+
+  .site-header {
+    min-height:58px;
+    padding:12px 16px;
+    gap:12px;
+  }
+
+  .brand-mini img { width:34px; height:34px; object-fit:contain; }
+
+  .bag-btn {
+    min-height:40px;
+    padding:10px 13px;
+    font-size:9px;
+    letter-spacing:.12em;
+  }
+
+  /* Stack common two-column layouts */
+  .hero,
+  .hero-grid,
+  .about-grid,
+  .contact-grid,
+  .split,
+  .two-col {
+    grid-template-columns:1fr !important;
+  }
+
+  .hero { min-height:auto; }
+  .hero > *, .hero-grid > * { min-width:0; }
+
+  /* Product/card grids become easy one-column mobile layouts */
+  .products-grid,
+  .product-grid,
+  .collection-grid,
+  .cards-grid {
+    grid-template-columns:1fr !important;
+  }
+
+  /* Keep tables usable without breaking the page */
+  table { display:block; width:100%; overflow-x:auto; -webkit-overflow-scrolling:touch; }
+
+  /* Forms */
+  input, select, textarea {
+    width:100%;
+    max-width:100%;
+    box-sizing:border-box;
+    font-size:16px; /* prevents iOS Safari zoom */
+  }
+
+  .btn, button {
+    min-height:44px;
+  }
+
+  /* Loader */
+  .loader-inner { width:min(330px,82vw); }
+  .loader-mark-wrap { width:76px; height:76px; }
+  .loader-mark { width:48px; height:48px; }
+  .loader-wordmark {
+    font-size:9px;
+    letter-spacing:.22em;
+    margin-left:.22em;
+  }
+  .loader-meta { font-size:6px; }
+
+  /* Legal page */
+  .legal-page { padding:105px 20px 60px; }
+  .legal-page h1 {
+    font-size:clamp(45px,15vw,70px);
+    line-height:.9;
+  }
+  .legal-intro { margin-bottom:45px; }
+  .legal-section { padding:24px 0; }
+  .legal-section p, .legal-section li { font-size:13px; }
+
+  /* Footer */
+  footer, .footer {
+    padding-left:20px !important;
+    padding-right:20px !important;
+  }
+}
+
+/* Small phones */
+@media (max-width: 390px) {
+  .site-header { padding-left:12px; padding-right:12px; }
+  .bag-btn { padding-left:10px; padding-right:10px; font-size:8px; }
+  .loader-inner { width:86vw; }
+  .loader-meta { display:none; }
+}
+
+/* Respect reduced-motion accessibility settings */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration:.01ms !important;
+    animation-iteration-count:1 !important;
+    scroll-behavior:auto !important;
+    transition-duration:.01ms !important;
+  }
+}

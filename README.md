@@ -51,3 +51,5 @@ Workflow file:
 - Added a premium animated loading screen with ZX mark, progress animation and loading metadata.
 - Added a dedicated `terms.html` Terms & Conditions page.
 - Updated the footer Terms & Conditions link to open the new page.
+
+- Added responsive/mobile polish for phones, tablets and laptops, including touch-friendly controls, stacked grids, overflow protection and reduced-motion support.
