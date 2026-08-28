@@ -7,18 +7,16 @@
   <meta name="description" content="ZANADRAXLILTH, premium South African streetwear. Built different. Made to stand out.">
   <title>ZANADRAXLILTH | Built Different.</title>
   <link rel="icon" type="image/jpeg" href="assets/zx-mark.jpg">
+  <link rel="manifest" href="manifest.json">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+  <meta name="apple-mobile-web-app-title" content="ZX">
+  <link rel="apple-touch-icon" href="assets/icon-192.png">
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <div id="loader" class="loader" aria-label="Loading ZANADRAXLILTH">
-    <div class="loader-inner">
-      <div class="loader-mark-wrap">
-        <img src="assets/zx-mark.jpg" alt="ZX" class="loader-mark">
-      </div>
-      <div class="loader-wordmark">ZANADRAXLILTH</div>
-      <div class="loader-line"><span></span></div>
-      <div class="loader-meta"><span>EST. 2026</span><span>LOADING EXPERIENCE</span></div>
-    </div>
+  <div id="loader" class="loader">
+    <img src="assets/zx-mark.jpg" alt="ZX">
   </div>
 
   <header class="site-header">
@@ -152,7 +150,7 @@
 
   <footer class="footer">
     <div class="footer-brand"><img src="assets/zanadraxlilth-logo.jpg" alt="ZANADRAXLILTH"><p>BUILT DIFFERENT. MADE TO STAND OUT.</p></div>
-    <div class="footer-links"><div><a href="#shop">SHOP</a><a href="#new-drop">NEW DROP</a><a href="#collections">COLLECTIONS</a><a href="#about">ABOUT</a></div><div><a href="#contact">CONTACT</a><a href="#">SHIPPING</a><a href="#">RETURNS</a><a href="#">PRIVACY POLICY</a><a href="terms.html">TERMS & CONDITIONS</a></div></div>
+    <div class="footer-links"><div><a href="#shop">SHOP</a><a href="#new-drop">NEW DROP</a><a href="#collections">COLLECTIONS</a><a href="#about">ABOUT</a></div><div><a href="#contact">CONTACT</a><a href="#">SHIPPING</a><a href="#">RETURNS</a><a href="#">PRIVACY POLICY</a><a href="#">TERMS & CONDITIONS</a></div></div>
     <div class="footer-bottom"><span>© 2026 ZANADRAXLILTH. ALL RIGHTS RESERVED.</span><a href="admin.html">ADMIN</a></div>
   </footer>
 
@@ -164,6 +162,13 @@
   <div id="product-modal" class="modal"><div class="modal-card"><button class="close-panel" data-close="product-modal">×</button><div id="product-detail"></div></div></div>
   <div id="checkout-modal" class="modal"><div class="modal-card checkout-card"><button class="close-panel" data-close="checkout-modal">×</button><div class="checkout-layout"><div><p class="eyebrow">CHECKOUT</p><h2>COMPLETE YOUR ORDER</h2><form id="checkout-form" class="checkout-form"><label>FULL NAME<input required></label><label>EMAIL<input required type="email"></label><label>PHONE NUMBER<input required type="tel"></label><label>SOUTH AFRICAN ADDRESS<input required></label><div class="two"><label>CITY<input required></label><label>PROVINCE<input required></label></div><label>POSTAL CODE<input required inputmode="numeric"></label><button class="btn btn-light" type="submit">PLACE ORDER</button></form></div><div class="checkout-summary" id="checkout-summary"></div></div></div></div>
 
+  <script>
+    if ("serviceWorker" in navigator) {
+      window.addEventListener("load", () => {
+        navigator.serviceWorker.register("./sw.js").catch(console.error);
+      });
+    }
+  </script>
   <script src="app.js"></script>
 </body>
 </html>

@@ -1,55 +1,32 @@
-# ZANADRAXLILTH Website
+# ZANADRAXLILTH
 
-Premium black-and-white streetwear storefront for ZANADRAXLILTH.
+Premium South African streetwear website.
 
-## Included
-- Responsive homepage, shop, new drop, collections, about, lookbook and contact sections
-- Product filtering and sorting
-- Product detail modal with sizes and quantity
-- Cart stored in browser localStorage
-- Demo checkout flow
-- Newsletter signup stored locally
-- Customer account placeholder
-- Owner admin dashboard at `admin.html`
-- Editable product price, stock, category, NEW and SOLD OUT status
-- Editable next-drop countdown
-- Official supplied logo assets, plus a cropped ZX mark made from the supplied logo
+## GitHub Pages
 
-## Run
-Open `index.html` in a modern browser, or serve the folder with any static web server.
+This project already includes `.github/workflows/deploy.yml` for GitHub Pages.
 
-## Before launch
-This is a front-end storefront demo. For a real e-commerce launch, connect:
-- product/order database
-- secure admin authentication
-- customer accounts
-- payment provider
-- shipping rates and tracking
-- transactional email
-- live Instagram/TikTok/Facebook URLs
-- final shipping, returns, privacy and terms content
+1. Create a **public** GitHub repository.
+2. Upload all files and folders in this project.
+3. Go to **Settings → Pages**.
+4. Under **Build and deployment**, choose **GitHub Actions** if it isn't already selected.
+5. Push to the `main` branch. The workflow deploys the site automatically.
+6. Open the Pages URL shown in **Settings → Pages**.
 
-No payment is processed by this demo.
+## Install as an app
 
-## GitHub Pages deployment
+The project is configured as a Progressive Web App (PWA).
 
-The repository includes `.github/workflows/deploy.yml`.
+On a supported phone browser, open the GitHub Pages website and choose **Add to Home screen** or **Install app**.
 
-To publish the website:
-1. Create a GitHub repository.
-2. Upload the website files, including the `.github` folder.
-3. Push the files to the `main` branch.
-4. In GitHub, open **Settings → Pages**.
-5. Under **Build and deployment**, choose **GitHub Actions**.
-6. The workflow will deploy the website automatically whenever you push to `main`.
+The PWA files are:
+- `manifest.json`
+- `sw.js`
+- `assets/icon-192.png`
+- `assets/icon-512.png`
 
-Workflow file:
-`.github/workflows/deploy.yml`
+The service worker caches the main site shell for a better offline experience.
 
+## Important
 
-## Recent updates
-- Added a premium animated loading screen with ZX mark, progress animation and loading metadata.
-- Added a dedicated `terms.html` Terms & Conditions page.
-- Updated the footer Terms & Conditions link to open the new page.
-
-- Added responsive/mobile polish for phones, tablets and laptops, including touch-friendly controls, stacked grids, overflow protection and reduced-motion support.
+The current checkout, account and contact features are demo/front-end features. A real store needs a secure backend, payment provider, database, authentication and order processing before accepting real customer payments.
