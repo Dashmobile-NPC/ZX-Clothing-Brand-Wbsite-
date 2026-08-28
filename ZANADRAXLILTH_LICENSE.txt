@@ -1,0 +1,60 @@
+ZANADRAXLILTH WEBSITE LICENSE
+Copyright (c) 2026 ZANADRAXLILTH
+
+All rights reserved.
+
+1. OWNERSHIP
+The ZANADRAXLILTH website, including its source code, design, layout, graphics,
+branding, logos, images, written content, product presentation, and other
+original materials (collectively, the "Materials") are owned by or licensed to
+ZANADRAXLILTH unless otherwise stated.
+
+2. PERMITTED USE
+You may view, access, and interact with the website for personal, informational,
+or legitimate business purposes. You may inspect the source code for personal
+learning, security review, or development purposes, provided applicable law
+and third-party rights are respected.
+
+3. RESTRICTIONS
+Without prior written permission from ZANADRAXLILTH, you may not reproduce,
+republish, redistribute, sell, sublicense, lease, commercially distribute,
+or create derivative commercial versions of the Materials. You may not remove
+proprietary notices or use the ZANADRAXLILTH name, logo, ZX mark, or other
+brand identifiers in a way that suggests endorsement or affiliation.
+
+4. BRAND ASSETS
+The ZANADRAXLILTH name, logos, ZX mark, product imagery, promotional artwork,
+and other brand assets are not granted under an open-source license and may
+not be reused without written permission.
+
+5. THIRD-PARTY MATERIALS
+Third-party libraries, fonts, icons, services, images, and other materials
+may have their own licenses and terms. Those terms remain applicable.
+
+6. NO WARRANTY
+The Materials are provided "as is", without warranties of any kind, to the
+maximum extent permitted by applicable law. ZANADRAXLILTH does not guarantee
+that the website or source code will be error-free or uninterrupted.
+
+7. LIMITATION OF LIABILITY
+To the maximum extent permitted by applicable law, ZANADRAXLILTH will not be
+liable for indirect, incidental, special, consequential, or other damages
+arising from use of or inability to use the Materials.
+
+8. RESERVATION OF RIGHTS
+All rights not expressly granted by this license are reserved by ZANADRAXLILTH.
+
+9. PERMISSION REQUESTS
+Requests to reuse, modify, redistribute, or commercially license the Materials
+should be directed to the official contact details published on the
+ZANADRAXLILTH website.
+
+10. GOVERNING LAW
+This license is intended to be interpreted in accordance with the laws of the
+Republic of South Africa, subject to mandatory rights or protections that
+cannot lawfully be excluded.
+
+This license does not replace or modify the website's Terms & Conditions,
+Privacy Policy, return policy, or other applicable legal notices.
+
+LAST UPDATED: AUGUST 2026
